@@ -1,6 +1,7 @@
 # Only track extensions and skills
 *
 !.gitignore
+!README.md
 !extensions/
 !extensions/**
 !skills/
