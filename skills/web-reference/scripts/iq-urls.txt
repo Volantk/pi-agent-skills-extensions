@@ -1,0 +1,38 @@
+# iquilezles.org key articles to scrape
+# Usage: Read this file, batch scrape with web_read
+
+## SDF Core (ESSENTIAL)
+https://iquilezles.org/articles/distfunctions
+https://iquilezles.org/articles/distfunctions2d  
+https://iquilezles.org/articles/smin
+https://iquilezles.org/articles/sdfrepetition
+https://iquilezles.org/articles/rmshadows
+https://iquilezles.org/articles/normalsSDF
+https://iquilezles.org/articles/raymarchingdf
+
+## Functions & Math
+https://iquilezles.org/articles/functions
+https://iquilezles.org/articles/smoothsteps
+https://iquilezles.org/articles/intersectors
+https://iquilezles.org/articles/palettes
+
+## Noise
+https://iquilezles.org/articles/fbm
+https://iquilezles.org/articles/warp
+https://iquilezles.org/articles/voronoise
+https://iquilezles.org/articles/smoothvoronoi
+
+## Texturing  
+https://iquilezles.org/articles/filtering
+https://iquilezles.org/articles/biplanar
+https://iquilezles.org/articles/checkerfiltering
+
+## Lighting & Color
+https://iquilezles.org/articles/outdoorslighting
+https://iquilezles.org/articles/fog
+https://iquilezles.org/articles/gamma
+
+## Optimization
+https://iquilezles.org/articles/noacos
+https://iquilezles.org/articles/sincos  
+https://iquilezles.org/articles/noatan

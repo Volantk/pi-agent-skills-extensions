@@ -1,0 +1,16 @@
+# Only track extensions and skills
+*
+!.gitignore
+!extensions/
+!extensions/**
+!skills/
+!skills/**
+
+# Build artifacts
+node_modules/
+*.js.map
+
+# Skill data that shouldn't be shared
+skills/weather/locations.json
+skills/weather/.cache/
+skills/web-reference/sources/
