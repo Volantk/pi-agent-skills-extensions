@@ -73,11 +73,12 @@ Shader sections in order:
 8. EFFECTS
 9. MAIN / FRAGMENT / VERTEX
 
-## Templates
+## Templates & References
 
 See references for full templates:
 - [GLSL Template](references/glsl-template.md)
 - [Unity HLSL Template](references/unity-hlsl-template.md)
+- [URP 14 Render Feature](references/urp14-render-feature.md) — ScriptableRendererFeature + Pass setup, Blit-compatible shaders, RTHandle API
 
 ## Quick Reference
 
