@@ -54,6 +54,20 @@ function truncateOutput(text: string): string {
 	return truncation.content;
 }
 
+/** Ensure a value that might be a JSON string is parsed into an object */
+function ensureObject(value: any): Record<string, any> {
+	if (!value) return {};
+	if (typeof value === "string") {
+		try {
+			const parsed = JSON.parse(value);
+			if (typeof parsed === "object" && parsed !== null) return parsed;
+		} catch {}
+		return {};
+	}
+	if (typeof value === "object" && !Array.isArray(value)) return value;
+	return {};
+}
+
 function noKeyError() {
 	return {
 		content: [
@@ -724,7 +738,7 @@ export default function (pi: ExtensionAPI) {
 			try {
 				const body: any = {
 					parent: { [params.parent_type]: params.parent_id },
-					properties: params.properties ?? {},
+					properties: ensureObject(params.properties),
 				};
 
 				// Set title — for databases, find the title property name
@@ -842,7 +856,7 @@ export default function (pi: ExtensionAPI) {
 
 			try {
 				const body: any = {};
-				if (params.properties) body.properties = params.properties;
+				if (params.properties) body.properties = ensureObject(params.properties);
 				if (params.archived != null) body.archived = params.archived;
 
 				const res = await notionFetch(`/pages/${params.page_id}`, {
