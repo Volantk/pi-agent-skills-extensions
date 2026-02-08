@@ -9,13 +9,9 @@ Analyze and summarize git contributions by author and date range.
 
 ## Resolving the Author
 
-If the user says "I" or "my work", determine their git identity:
+If the user says "I" or "my work", use "Bjørnar" as the author.
 
-```bash
-git config user.name
-```
-
-Use the result as the `--author` filter. If ambiguous, ask.
+For other people, use their name as the `--author` filter. If ambiguous, ask.
 
 ## Resolving the Date Range
 
